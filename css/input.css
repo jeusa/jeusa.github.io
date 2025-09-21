@@ -73,7 +73,7 @@
 
 /* Navigation link styling */
 .nav-link {
-  @apply text-2xl hover:text-primary transition-colors;
+  @apply text-base sm:text-2xl hover:text-primary transition-colors;
 }
 
 /* Active link styling - yellow text */
