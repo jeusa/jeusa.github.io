@@ -8,19 +8,22 @@
     <title></title>
 
     <link rel="stylesheet" href="css/output.css">
-    <script src="js/p5.min.js"></script>
+    <script src="js/lib/p5.min.js"></script>
+    <script src="js/lib/jquery-3.7.1.min.js"></script>
     <script src="js/background.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
     <div id="background-container"></div>
 
-    <div class="fixed top-4 sm:top-8 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-sm sm:max-w-none sm:w-auto px-4 sm:px-0">
-      <ul class="menu menu-horizontal bg-black text-white p-3 sm:p-6">
-        <li><a href="#" class="nav-link font-semibold">Jeúsa Hamer</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-      </ul>
+    <div id="main-container" class="flex flex-col items-center">
+
+      <div class="menu menu-horizontal bg-black text-white flex-wrap p-6 m-5 shadow-xl">
+        <a href="#" class="font-display nav-link font-bold">Jeúsa Hamer</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+      </div>
+
     </div>
   </body>
 </html>

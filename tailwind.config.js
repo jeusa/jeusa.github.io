@@ -3,12 +3,8 @@ module.exports = {
       "./index.html",
       "./css/**/*.{html,js,css}",
     ],
-    theme: {
-      extend: {
-        fontFamily: {
-          'sans': ['Inclusive Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        },
-      },
-    },
+  theme: {
+
+  },
     plugins: [require("daisyui")],
   };

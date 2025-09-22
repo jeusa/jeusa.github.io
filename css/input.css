@@ -3,6 +3,27 @@
     themes: rectanglic --default;
   }
 
+/* Inclusive Sans Variable Font */
+@font-face {
+  font-family: incl-sans;
+  src: url(../fonts/InclusiveSans-VariableFont_wght.ttf);
+
+}
+
+body {
+  font-family: incl-sans;
+}
+
+/* Navigation link styling */
+.nav-link {
+  @apply text-base sm:text-2xl hover:text-primary m-3;
+}
+
+/* Active link styling - yellow text */
+.nav-link.active {
+  color: #ffcc00; /* Yellow - same as --color-primary */
+}
+
 @plugin "daisyui/theme" {
   name: "rectanglic";
   default: true;
@@ -54,36 +75,3 @@
   --noise: 0;
 }
 
-/* Inclusive Sans Variable Font */
-@font-face {
-  font-family: 'Inclusive Sans';
-  src: url('../fonts/InclusiveSans-VariableFont_wght.ttf') format('truetype');
-  font-weight: 200 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inclusive Sans';
-  src: url('../fonts/InclusiveSans-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: 200 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Navigation link styling */
-.nav-link {
-  @apply text-base sm:text-2xl hover:text-primary transition-colors;
-}
-
-/* Active link styling - yellow text */
-.nav-link.active {
-  color: #ffcc00; /* Yellow - same as --color-primary */
-}
-
-/* Override DaisyUI menu focus/active background */
-.menu li > *:focus,
-.menu li > *.active,
-.menu li > *:active {
-  background-color: transparent !important;
-}
